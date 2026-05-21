@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yeram Seo — Oil Tank Culture Park</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0d0c;
+    --ink: #e8e8e3;
+    --soft: #8c8c84;
+    --line: rgba(255,255,255,0.12);
+    --frame-bg: #1a1a18;
+    --mono: 'Spline Sans Mono', monospace;
+    --max: 1100px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: var(--mono); font-weight: 400;
+    line-height: 1.7; -webkit-font-smoothing: antialiased;
+  }
+
+  /* header */
+  header {
+    max-width: var(--max); margin: 0 auto;
+    padding: clamp(4rem,10vw,9rem) clamp(1.5rem,6vw,6rem) clamp(2.5rem,5vw,4rem);
+  }
+  header .name { font-size:0.72rem; letter-spacing:0.35em; text-transform:uppercase; color:var(--soft); margin-bottom:1.6rem; }
+  header h1 { font-weight:500; font-size:clamp(1.4rem,3vw,2.1rem); letter-spacing:-0.01em; line-height:1.35; }
+  header .meta { margin-top:1.4rem; font-size:0.78rem; color:var(--soft); letter-spacing:0.02em; max-width:40ch; }
+
+  /* prologue */
+  .prologue {
+    max-width: var(--max); margin: 0 auto;
+    padding: clamp(1rem,2vw,2rem) clamp(1.5rem,6vw,6rem) clamp(2rem,5vw,4rem);
+  }
+  .prologue .pframe { max-width: 460px; background: var(--frame-bg); overflow:hidden; }
+  .prologue img { width:100%; height:100%; object-fit:cover; display:block; }
+  .prologue figcaption { font-size:0.7rem; color:var(--soft); margin-top:0.8rem; line-height:1.7; letter-spacing:0.02em; max-width:46ch; }
+  .prologue .label { color:var(--ink); font-weight:500; }
+
+  /* sequence */
+  .seq { max-width: var(--max); margin: 0 auto; padding: 0 clamp(1rem,4vw,3rem); }
+  figure { margin: 0; }
+  .shot { margin: clamp(3rem,7vw,6rem) 0; display:flex; flex-direction:column; align-items:center; }
+  .shot .frame { width:100%; max-width:760px; }
+  .shot figcaption { width:100%; max-width:760px; text-align:left; }
+  .shot.narrow .frame { max-width:520px; }
+  .shot.narrow figcaption { max-width:520px; }
+  .texture { margin: clamp(2.5rem,5vw,4.5rem) 0; max-width:600px; margin-left:auto; margin-right:auto; display:flex; flex-direction:column; align-items:center; }
+  .texture figcaption { width:100%; text-align:left; }
+
+  .frame { position:relative; overflow:hidden; background:var(--frame-bg); display:flex; align-items:center; justify-content:center; }
+  .frame img { width:100%; height:100%; object-fit:cover; display:block; }
+
+  figcaption { font-size:0.72rem; line-height:1.7; margin-top:0.85rem; color:var(--soft); letter-spacing:0.02em; }
+  figcaption .t { color:var(--ink); font-weight:500; }
+
+  /* footer */
+  footer {
+    max-width: var(--max); margin: 0 auto;
+    padding: clamp(4rem,8vw,7rem) clamp(1.5rem,6vw,6rem);
+    border-top: 1px solid var(--line);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:1.5rem;
+    font-size:0.74rem; letter-spacing:0.03em;
+  }
+  footer .sub { color:var(--soft); }
+  footer a { color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line); }
+  footer a:hover { border-color:var(--ink); }
+
+  figure { opacity:0; transform:translateY(20px); transition:opacity 1s ease, transform 1s ease; }
+  figure.in { opacity:1; transform:none; }
+
+  @media (max-width:720px){ .texture{ max-width:100%; } }
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="name">Yeram Seo</div>
+    <h1>Oil Tank Culture Park</h1>
+    <div class="meta">Mapo, Seoul · 2023 · Digital photographs</div>
+  </header>
+
+  <!-- PROLOGUE: pre-construction aerial -->
+  <div class="prologue">
+    <figure>
+      <div class="pframe"><img src="img/Tank_02_web.jpg" alt=""></div>
+      <figcaption><span class="label">Before</span> &nbsp; Aerial view of the oil storage base, prior to conversion<br>Source: RoA architects, roa.kr</figcaption>
+    </figure>
+  </div>
+
+  <div class="seq">
+
+    <figure class="shot">
+      <div class="frame"><img src="img/_DSC5958_web.jpg" alt=""></div>
+      <figcaption><span class="t">No. 01</span> &nbsp; Mapo, Seoul &nbsp; 2023</figcaption>
+    </figure>
+
+    <figure class="shot">
+      <div class="frame"><img src="img/_DSC6004_web.jpg" alt=""></div>
+      <figcaption><span class="t">No. 02</span> &nbsp; Mapo, Seoul &nbsp; 2023</figcaption>
+    </figure>
+
+    <figure class="shot">
+      <div class="frame"><img src="img/_DSC5981_web.jpg" alt=""></div>
+      <figcaption><span class="t">No. 03</span> &nbsp; Mapo, Seoul &nbsp; 2023</figcaption>
+    </figure>
+
+    <figure class="shot">
+      <div class="frame"><img src="img/_DSC6098_web.jpg" alt=""></div>
+      <figcaption><span class="t">No. 04</span> &nbsp; Mapo, Seoul &nbsp; 2023</figcaption>
+    </figure>
+
+    <figure class="shot">
+      <div class="frame"><img src="img/_DSC6059_web.jpg" alt=""></div>
+      <figcaption><span class="t">No. 05</span> &nbsp; Mapo, Seoul &nbsp; 2023</figcaption>
+    </figure>
+
+    <figure class="shot">
+      <div class="frame"><img src="img/_DSC5954_web.jpg" alt=""></div>
+      <figcaption><span class="t">No. 06</span> &nbsp; Mapo, Seoul &nbsp; 2023</figcaption>
+    </figure>
+
+    <figure class="shot narrow">
+      <div class="frame"><img src="img/_DSC6007_crop2_web.jpg" alt=""></div>
+      <figcaption><span class="t">No. 07</span> &nbsp; Mapo, Seoul &nbsp; 2023</figcaption>
+    </figure>
+
+    <figure class="texture right">
+      <div class="frame"><img src="img/_DSC6023_2_web.jpg" alt=""></div>
+      <figcaption><span class="t">No. 08</span> &nbsp; Detail</figcaption>
+    </figure>
+
+  </div>
+
+  <footer>
+    <div>Yeram Seo<br><span class="sub">Busan, KR</span></div>
+    <div>
+      <a href="#">Brunch</a> &nbsp;·&nbsp;
+      <a href="#">Instagram</a> &nbsp;·&nbsp;
+      <a href="#">Email</a>
+    </div>
+  </footer>
+
+  <script>
+    const obs = new IntersectionObserver((es)=>{
+      es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target);} });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('figure').forEach(el=>obs.observe(el));
+  </script>
+
+</body>
+</html>
